@@ -1,7 +1,7 @@
 {
   "name": "chande",
   "version": "0.1.0",
-  "homepage": "https://ecao77.github.io/psolving",
+  "homepage": "https://ecao77.github.io",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
