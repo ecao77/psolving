@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
-import Recaptcha from 'react-recaptcha';
+import ReCAPTCHA from 'react-google-recaptcha';
 import './Webpage.css';
 
 function About() {
 
     const [isVerified, setIsVerified] = useState(false);
 
-    const handleRecaptchaVerify = (response) => {
-        // Callback function to set state when reCAPTCHA is successfully verified
-        setIsVerified(true);
+    const onChange = (value) => {
+        console.log("email is:");
     };
 
     const handleSubmit = (e) => {
@@ -45,14 +44,10 @@ return (
                     <form onSubmit={handleSubmit}>
                         <p>Email: <span id="email">info@example.com</span></p>
                         <p>Phone: 123-456-7890</p>
-                        {/* Add more contact information as needed */}
-                        {/* Add reCAPTCHA */}
-                        <Recaptcha
+                        <ReCAPTCHA
                             sitekey="6LckIakpAAAAAPFrpaKRxH5gi_fxxH1Pgk4GUIkT"
-                            render="explicit"
-                            verifyCallback={handleRecaptchaVerify}
+                            onChange = {onChange}
                         />
-                        <button type="submit">Submit</button>
                     </form>
                 </div>
             </section>
