@@ -1,0 +1,43 @@
+.navbar {
+    background-color: #fbfbfb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2em 15%;
+}
+
+.big-link {
+    text-decoration: none;
+    font-size: 34px;
+    color: black;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex; /* Display the links horizontally */
+    font-size: 1.3em;
+    gap: 50px;
+}
+
+.nav-links li {
+    margin: 0; /* Remove default list item margin */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+}
+
+  /* Add this to center the header content */
+.App-header {
+    margin-top: 20px;
+}
+
+.logo {
+    width: 9em; /* Set the width of the SVG */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+.bold {
+    font-weight: bold;
+}

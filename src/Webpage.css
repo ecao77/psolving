@@ -1,0 +1,366 @@
+.homepage-header {
+    background-color: #ffffff;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.webpage {
+    text-align: left;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: calc(10px + 2vmin);
+}
+
+.Title {
+    margin-top: 1.5em;
+    align-items: start;
+}
+
+.gradient {
+    background-color: #f3ec78;
+    background-image: linear-gradient(45deg, #b6e37b, #c55d1c);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+.Display {
+    color: #000000
+}
+
+.desc {
+    color: #000000
+}
+
+.login-box {
+    width: 400px; /* Set the width of your box */
+    height: 470px; /* Set the height of your box */
+    background-color: #fafafa; /* Set the background color of your box */
+    border-radius: 10px; /* Set the border radius for rounded corners */
+    border: 5px solid #2b2b2b; /* Set the edge color and edge width */
+    padding: 20px; /* Add padding to the content inside the box */
+}
+.login-desc {
+    text-align: center;
+    margin-right: 60%;
+    font-size: 0.5em;
+    color: #949494;
+    margin-bottom: 5px;
+}
+
+.login-welcome {
+    text-align: center;
+    font-size: 0.8em;
+    color: #000000;
+    margin-top: 85px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center children horizontally */
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.login-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 340px;
+    font-size: 20px;
+}
+.login-button {
+    background-color: #000000; 
+    background-image: linear-gradient(45deg, #b6e37b, #c55d1c);
+    color: #fff; /* Text color */
+    font-size: 20px;
+    border: none; /* Remove default button border */
+    padding: 12px 20px; /* Padding for the button */
+    border-radius: 20px; /* Rounded corners */
+    width: 85%;
+}
+
+.login-tidbit {
+    text-align: center;
+    font-size: 0.5em;
+    color: #949494;
+    margin-bottom: 5px;
+    margin-top: 50px;
+}
+
+.problem-box {
+    width: 75%;
+    max-height: 30%; /* Set the height of your box */
+    background-color: #fafafa; /* Set the background color of your box */
+    border-radius: 10px; /* Set the border radius for rounded corners */
+    border: 5px solid #000000; /* Set the edge color and edge width */
+    padding: 60px; /* Add padding to the content inside the box */
+    display: inline-block; /* Make it an inline-block element */
+    word-wrap: break-word;
+}
+
+.fixed-box {
+    width: 75%;
+    height: 110px; /* Set the height of your box */
+    background-color: #fafafa; /* Set the background color of your box */
+    border-radius: 10px; /* Set the border radius for rounded corners */
+    border: 5px solid #000000; /* Set the edge color and edge width */
+    padding: 20px; /* Add padding to the content inside the box */
+    display: inline-block; /* Make it an inline-block element */
+    word-wrap: break-word;
+}
+
+.problem-text {
+    margin: 0px 0px 0px 0px;
+    font-size: 0.8em;
+    line-height: 50px;
+}
+
+.loading-text {
+    text-align: center;
+    margin-top: 38px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.answer-form {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    margin-top: 2%;
+    margin-bottom: 100px;
+}
+
+.answer-input {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 63%;
+    font-size: 20px;
+}
+
+.answer-button {
+    background-color: #000000; 
+    color: #fff; /* Text color */
+    font-size: 1.2rem;
+    border: none; /* Remove default button border */
+    padding: 17px 15px; /* Padding for the button */
+    border-radius: 20px; /* Rounded corners */
+    margin-left: 2%;
+    width: 8%;
+}
+
+.answer-button:hover {
+    background-color: #343434
+}
+
+.forfeit-button {
+    background-color: #000000; 
+    background: linear-gradient(135deg, #a9a9a9, #c8c8c8);
+    color: #fff; /* Text color */
+    font-size: 1.2rem;
+    border: none; /* Remove default button border */
+    padding: 17px 15px; /* Padding for the button */
+    border-radius: 20px; /* Rounded corners */
+    margin-left: 9px;
+    width: 8%;
+}
+
+.forfeit-button:hover {
+    background: linear-gradient(135deg, #c1c1c1, #cfcfcf);
+}
+
+.no-highlight {
+    user-select: none; 
+    -moz-user-select: none;
+    -webkit-text-select: none;
+    -webkit-user-select: none;
+}
+
+.solution-box {
+    width: 75%;
+    max-height: 30%; /* Set the height of your box */
+    margin-top: 80px;
+    background-color: #fafafa; /* Set the background color of your box */
+    border-radius: 10px; /* Set the border radius for rounded corners */
+    border: 5px solid #15852f; /* Set the edge color and edge width */
+    padding: 60px; /* Add padding to the content inside the box */
+    display: inline-block; /* Make it an inline-block element */
+    word-wrap: break-word;
+}
+
+.bolb {
+    font-weight: bold;
+}
+
+.solution {
+    margin-top: 60px;
+}
+
+.experience-bar {
+    width: 83.5%;
+    height: 40px;
+    background: #f5f5f5;
+    border-radius: 15px;    
+
+}
+
+.experience-fill {
+    height: 100%;
+    background: linear-gradient(270deg, #eedf37, #da3916);
+    border-radius: 15px;
+    transition: width 1s ease-in-out;
+}
+
+.experience-desc {
+    text-align: left;
+    margin-left: 1%;
+    font-size: 0.75em;
+    color: #393939;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.experience-bottom {
+    width: 82%;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    margin-left: 1%;
+    font-size: 0.75em;
+    color: #393939;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.level-text {
+    flex-grow: 1; /* This will make the "LEVEL {level}" part take up all available space */
+}
+
+.exp-text {
+    text-align: right; /* Aligns the exp text to the right */
+}
+
+.top-space {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.bottom-space {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.flickering {
+    animation: flicker 0.3s infinite;
+}
+
+@keyframes flashDifferent {
+    0% { color: green; }    /* Start color for flashing effect */
+    50% { color: yellow; }  /* Middle color for flashing effect */
+    100% { color: green; }  /* End color for flashing effect */
+}
+
+.flashing {
+    animation: flashDifferent 2s ease infinite; /* Adjust the duration as needed */
+}
+
+.card {
+    background-color: #ffffff;
+    cursor: pointer;
+    margin-bottom: 30px; /* Add margin bottom to create a gap */
+}
+
+.card-top {
+    border: 1px solid #ccc; /* Apply border here */
+    padding-top: 5px; /* Adjust only the top padding */
+    padding-bottom: 5px; /* Keep the bottom padding the same */
+    padding-left: 40px; /* Keep the left padding the same */
+    padding-right: 40px; /* Keep the right padding the same */
+    border-bottom: 1px solid #ccc;
+}
+
+.card-bottom {
+    border: 1px solid #ccc; /* Apply border here */
+    padding-top: 5px; /* Adjust only the top padding */
+    padding-bottom: 5px; /* Keep the bottom padding the same */
+    padding-left: 40px; /* Keep the left padding the same */
+    padding-right: 40px; /* Keep the right padding the same */
+    border-bottom: 1px solid #ccc;
+}
+
+.card-text {
+    font-size: 0.75em;
+}
+
+.card-color1 {
+    background-color: #fdfdfd;
+}
+
+.card-color2 {
+    background-color: #f9f9f9;
+}
+
+.slide-in {
+    animation: slideIn 0.5s ease forwards;
+    opacity: 0;
+    transform: translateY(-50px);
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1; 
+        transform: translateY(0);
+    }
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    17% { transform: translateX(-10px); }
+    33% { transform: translateX(10px); }
+    49% { transform: translateX(-6px); }
+    66% { transform: translateX(6px); }
+    83% { transform: translateX(-3px); }
+    100% { transform: translateX(0); }
+}
+
+.shake {
+    animation: shake 0.5s ease;
+}
+
+@keyframes flashBackground {
+    0% {
+        background-color: white;
+    }
+    50% {
+        background-color: rgb(255, 185, 194);
+    }
+    100% {
+        background-color: white;
+    }
+}
+
+.input-error {
+    animation: flashBackground 0.5s;
+}

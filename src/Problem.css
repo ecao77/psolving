@@ -1,0 +1,9 @@
+/* Box.css */
+.custom-box {
+    width: 75%; /* Set the width of your box */
+    height: 200px; /* Set the height of your box */
+    background-color: #fafafa; /* Set the background color of your box */
+    border-radius: 10px; /* Set the border radius for rounded corners */
+    border: 5px solid #000000; /* Set the edge color and edge width */
+    padding: 20px; /* Add padding to the content inside the box */
+}
