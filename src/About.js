@@ -4,10 +4,10 @@ import './Webpage.css';
 
 function About() {
 
-    const [isVerified, setIsVerified] = useState(false);
+    const [isHuman, setIsHuman] = useState(false);
 
     const onChange = (value) => {
-        console.log("email is:");
+        setIsHuman(true);
     };
 
     const handleSubmit = (e) => {
@@ -40,15 +40,16 @@ return (
         <section className="contact-section">
                 <div className="section-content">
                     <h2>Contact Us</h2>
-                    {/* Add a form with reCAPTCHA */}
-                    <form onSubmit={handleSubmit}>
-                        <p>Email: <span id="email">info@example.com</span></p>
-                        <p>Phone: 123-456-7890</p>
+                    {isHuman ? (
+                        <>
+                            <p>Email: <span id="email">info@example.com</span></p>
+                        </>
+                    ) : (
                         <ReCAPTCHA
                             sitekey="6LckIakpAAAAAPFrpaKRxH5gi_fxxH1Pgk4GUIkT"
                             onChange = {onChange}
                         />
-                    </form>
+                    )}
                 </div>
             </section>
     </div>
