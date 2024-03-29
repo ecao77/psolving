@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "httpsL//ecao77.github.io/psolving/precache-manifest.26b8fbd9d2518b9342b2d83d63a1a962.js"
+  "/psolving/precache-manifest.45f1d85c31f6cc9540063905417f8d2e.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("httpsL//ecao77.github.io/psolving/index.html", {
+workbox.routing.registerNavigationRoute("/psolving/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
