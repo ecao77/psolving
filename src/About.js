@@ -10,16 +10,6 @@ function About() {
         setIsHuman(true);
     };
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        if (isVerified) {
-            // Handle form submission here, maybe you can use a backend service to send an email
-            console.log("Form submitted successfully!");
-        } else {
-            alert("Please verify that you are not a robot.");
-        }
-    };
-
 
 return (
     <div className="webpage">
