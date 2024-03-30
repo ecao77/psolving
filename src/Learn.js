@@ -12,7 +12,7 @@ function Learn( props ) {
     const app = initializeApp(firebaseConfig);
     const db = getFirestore(app);
 
-    // problem, answer, loading (for api), reveal
+    {/*  problem, answer, loading (for api), reveal */}
     const {username} = props;
     const [problem,    setProblem]  = useState(null);
     const [userAnswer, setAnswer]   = useState(null);

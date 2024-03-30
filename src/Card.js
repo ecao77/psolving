@@ -10,7 +10,7 @@ function Card({ problem }) {
 
     const equations = /<<.*?>>/g;
 
-    // this is for the open-able past problem section
+    {/*  this is for the open-able past problem section */}
     return (
         <>
             <div className="card">
