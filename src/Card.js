@@ -8,8 +8,9 @@ function Card({ problem }) {
         setIsOpen(!isOpen);
     };
 
-    const equations = /\<<.*?>>/g;
+    const equations = /<<.*?>>/g;
 
+    // this is for the open-able past problem section
     return (
         <>
             <div className="card">

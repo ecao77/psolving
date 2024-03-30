@@ -374,11 +374,11 @@
 }
 
 .feature {
-    width: calc(30% - 20px); /* Adjusted width to accommodate three features in each row */
+    width: calc(27%); /* Adjusted width to accommodate three features in each row */
     background-color: #f5f5f5;
     border-radius: 15px;
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 30px 30px 5px 30px;
+    margin-bottom: 35px;
 }
 
 .feature-title {

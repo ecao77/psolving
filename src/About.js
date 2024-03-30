@@ -4,8 +4,10 @@ import './Webpage.css';
 
 function About() {
 
+    // for reCAPTCHA
     const [isHuman, setIsHuman] = useState(false);
 
+    // onChange for reCAPTCHA is if it passes.
     const onChange = (value) => {
         setIsHuman(true);
     };
@@ -13,16 +15,20 @@ function About() {
 
 return (
     <div className="webpage">
+
+        // About Us section
         <section className="section no-highlight">
             <h1 className = "Title">About Us</h1>
             <p>Welcome to the Problem Solving Initiative (PSI), where homeschooling meets zero-cost interactive mathematics education! At PSI, we are dedicated to providing a dynamic online learning environment designed to enhance critical thinking skills in mathematics for homeschooled children.</p>
         </section>
 
+        // Mission section
         <section className="section no-highlight">
             <h2>Our Mission</h2>
             <p>Fostering a love in mathematics requires a deep understanding of how things work together. With a database of thousands of hand-curated word problems selected to hone critical thinking in applicable real-world circumstances, we hope to bring mathematics to life for your child. </p>
         </section>
 
+        // Features: 2x3 grid
         <section className="section">
             <h2>Features</h2>
             <div class="features no-highlight">
@@ -53,12 +59,13 @@ return (
             </div>
         </section>
 
+        // reCAPTCHA & my email.
         <section className="section">
                 <div className="section-content">
                     <h2>Contact Us</h2>
                     {isHuman ? (
                         <>
-                            <p>Email: <span id="email">ecao787@gmail.com</span></p>
+                            <p>Reach out through email: <span id="email">ecao787@gmail.com</span></p>
                         </>
                     ) : (
                         <>
@@ -72,11 +79,6 @@ return (
                     )}
                 </div>
         </section>
-
-        <div className="footer">
-            Made with ❤️ from Houston, Texas
-        </div>
-
     </div>
 
 );

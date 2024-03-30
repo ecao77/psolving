@@ -12,6 +12,7 @@ function Learn( props ) {
     const app = initializeApp(firebaseConfig);
     const db = getFirestore(app);
 
+    // problem, answer, loading (for api), reveal
     const {username} = props;
     const [problem,    setProblem]  = useState(null);
     const [userAnswer, setAnswer]   = useState(null);
@@ -19,8 +20,8 @@ function Learn( props ) {
     const [reveal,     setReveal]   = useState(false);
     const [correct,    setStatus]   = useState(true);
     const [currentXP,  setXP]       = useState(0); 
-    const [completedProblems, setCompletedProblems] = useState([]);
-    const [isNewProblem, setIsNewProblem] = useState(false);
+    const [completedProblems,   setCompletedProblems]   = useState([]);
+    const [isNewProblem,        setIsNewProblem]        = useState(false);
 
     const problemsCollection = collection(db, 'problems');
     const progressCollection = collection(db, 'progress');
@@ -78,7 +79,7 @@ function Learn( props ) {
     }
 
     const numericalAnswer = /#### (\d+)/;
-    const equations = /\<<.*?>>/g;
+    const equations = /<<.*?>>/g;
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -94,7 +95,6 @@ function Learn( props ) {
                 }
             }
             setXP(currentXP + Math.floor(Math.random() * 50) + 100);
-            {/* alert('Correct answer!'); */}
 
             setReveal(false);
             setStatus(true);
@@ -121,7 +121,6 @@ function Learn( props ) {
             setTimeout(() => {
                 document.getElementById("answer-input").classList.remove("shake");
             }, 500);
-            {/* alert('Incorrect answer!'); */}
         }
         setAnswer('');
     };
